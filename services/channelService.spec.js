@@ -9,7 +9,7 @@ describe('channelService', () => {
       channelService.list().then(($result) => (result = $result)));
 
     it('should return the wanted game', () => {
-      expect(result.length).to.eql(4);
+      expect(result.length).to.eql(3);
     });
   });
 });

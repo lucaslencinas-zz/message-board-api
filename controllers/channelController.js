@@ -8,7 +8,7 @@ function createMessage(req, res, next) {
 
   return channelService
     .createMessage(channelId, message)
-    .then((createdMessage) => res.status(201).json(createdMessage))
+    .then((createdMessage) => res.status(201).json(createdMessage).send())
     .catch(next);
 }
 

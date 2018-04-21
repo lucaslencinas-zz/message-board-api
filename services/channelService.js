@@ -4,11 +4,6 @@ const uuid = require('uuid');
 
 const channels = [
   {
-    id: 'c44be829-3d89-4b70-80be-277b7633bc5a',
-    name: 'kids',
-    messages: []
-  },
-  {
     id: 'c44be829-3d89-4b70-80be-177b7633bc5b',
     name: 'cleanning',
     messages: []
@@ -27,7 +22,6 @@ const channels = [
 
 function list() {
   const adaptedChannels = channels.map((channel) => ({ id: channel.id, name: channel.name }));
-  console.log(adaptedChannels);
   return Promise.resolve(adaptedChannels);
 }
 
